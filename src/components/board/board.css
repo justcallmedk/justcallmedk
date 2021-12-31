@@ -1,0 +1,49 @@
+.board-parent{
+	float:left;
+}
+
+.board {
+	width:32px;
+	height:32px;
+	color:#aaa;
+	float:left;
+	text-align: center;
+	background-size:50%;
+	background-repeat:no-repeat;
+	background-position: center;
+}
+
+.board.blocked {
+	background-color: #e07a5f;
+}
+
+.board.event {
+	background-color: #f2cc8f;
+	cursor:pointer;
+}
+
+.message {
+	background-color:#F4F1DE;
+	position:absolute;
+	border:5px #81B29A solid;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.message .close {
+	color: #E07A5F;
+	text-align: right;
+	cursor: pointer;
+	padding:5px 5px 0 0;
+}
+
+.message .inner {
+	font-family: 'Press Start 2P', cursive;
+	color: #3D405B;
+	padding:20px;
+}
+
+#messageBox {
+	display:none;
+}

@@ -1,0 +1,41 @@
+.controller {
+	position:absolute;
+	bottom:38px;
+	right:0;
+	--keySize : 32px;
+}
+
+.controller .key {
+	position:absolute;
+	width:var(--keySize);
+	height:var(--keySize);
+	background-color:#F4F1DE;
+	color:#81B29A;
+	text-align: center;
+	font-weight: bold;
+	font-size:26px;
+}
+
+.controller .key:hover {
+	background-color:#F2CC8F;
+}
+.controller .up.key {
+	bottom:calc(var(--keySize) * 2);
+	right:calc(var(--keySize) * 1);
+}
+
+.controller .key.right {
+	bottom:calc(var(--keySize) * 1);
+	right:calc(var(--keySize) * 0);
+}
+
+.controller .key.down {
+	bottom:calc(var(--keySize) * 0);
+	right:calc(var(--keySize) * 1);
+}
+
+.controller .key.left {
+	bottom:calc(var(--keySize) * 1);
+	right:calc(var(--keySize) * 2);
+}
+
