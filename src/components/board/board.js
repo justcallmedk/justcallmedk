@@ -3,6 +3,8 @@ import './board.css';
 
 function Board(props) {
   const PIXEL_SIZE = 32;
+  const BLOCKED = 'blocked';
+  const RESERVED = 'reserved';
   let myRefs = {};
 
   let tilesPropMap = {
@@ -11,7 +13,7 @@ function Board(props) {
   };
 
   let tilesProp = {
-    board_0_0 : 'reserved' // reserved for starting pos;
+    board_0_0 : RESERVED // reserved for starting pos;
   };
 
   const generateRandKey = () => {
@@ -28,7 +30,7 @@ function Board(props) {
     let NUM_BLOCKED = props.isMobile ? 5 : 19;
 
     for(let i = 0; i < NUM_BLOCKED; i++) {
-      tilesProp[generateRandKey()] = { name : 'blocked' };
+      tilesProp[generateRandKey()] = { name : BLOCKED };
     }
   };
 
